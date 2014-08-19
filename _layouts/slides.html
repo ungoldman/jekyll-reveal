@@ -19,25 +19,6 @@
     <script src="{{ site.baseurl }}/public/js/md.min.js"></script>
     <script src="{{ site.baseurl }}/public/js/head.min.js"></script>
     <script src="{{ site.baseurl }}/public/js/reveal.min.js"></script>
-    <script>
-      $(function(){
-        var el = $('script[type="text/template"]');
-        var html = el.html();
-        var mdstr = md(html);
-        el.html(mdstr);
-
-        Reveal.initialize({
-          transition: 'none',
-          dependencies: [
-            // Interpret Markdown in <section> elements
-            { src: '{{ site.baseurl }}/public/js/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-            { src: '{{ site.baseurl }}/public/js/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-
-            // Syntax highlight for <code> elements
-            { src: '{{ site.baseurl }}/public/js/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
-          ]
-        });
-      });
-    </script>
+    <script src="{{ site.baseurl }}/public/js/shame.js"></script>
   </body>
 </html>
