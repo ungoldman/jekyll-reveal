@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+
+  <head>
+    {% include head.html %}
+    <link rel="stylesheet" href="{{ site.baseurl }}/public/css/reveal.min.css">
+  </head>
+
+  <body>
+
+    <div class="reveal"><div class="slides">
+    <section data-markdown data-separator="^\n---\n$">
+        <script type="text/template">
+          {{ content }}
+        </script>
+    </section>
+    </div></div>
+    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="{{ site.baseurl }}/public/js/md.min.js"></script>
+    <script src="{{ site.baseurl }}/public/js/head.min.js"></script>
+    <script src="{{ site.baseurl }}/public/js/reveal.min.js"></script>
+    <script>
+      $(function(){
+        var el = $('script[type="text/template"]');
+        var html = el.html();
+        var mdstr = md(html);
+        el.html(mdstr);
+
+        Reveal.initialize({
+          transition: 'none',
+          dependencies: [
+            // Interpret Markdown in <section> elements
+            { src: '{{ site.baseurl }}/public/js/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+            { src: '{{ site.baseurl }}/public/js/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+
+            // Syntax highlight for <code> elements
+            { src: '{{ site.baseurl }}/public/js/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+          ]
+        });
+      });
+    </script>
+  </body>
+</html>
