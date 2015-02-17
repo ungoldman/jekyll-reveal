@@ -1,5 +1,9 @@
-# Slides
+# jekyll-reveal
 
-A slide deck template based on [@mdo](http://twitter.com/mdo)'s [Lanyon](https://github.com/poole/lanyon) and [@hakimel](https://twitter.com/hakimel)'s [reveal.js](http://lab.hakim.se/reveal-js).
+A [Jekyll](http://jekyllrb.com) template for quickly writing slides in markdown. Based on [mdo](https://github.com/mdo)'s [Lanyon](http://lanyon.getpoole.com) theme and [hakimel](https://github.com/hakimel)'s [reveal.js](http://lab.hakim.se/reveal-js) HTML presentation framework.
 
 This is a *very* preliminary experimental release. Please pardon the mess.
+
+## License
+
+[MIT](LICENSE.md)

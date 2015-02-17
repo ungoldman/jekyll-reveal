@@ -1,8 +1,8 @@
 ---
-title: Example Slide Deck
+title: Example
 ---
 
-## Example Slide Deck
+## Example Slides
 
 Using the `jekyll-reveal` template
 

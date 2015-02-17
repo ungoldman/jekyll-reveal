@@ -9,11 +9,11 @@ permalink:            pretty
 relative_permalinks:  true
 
 # Setup
-title:                Slides
-tagline:              'A slide deck template'
-description:          'Slides: A slide deck template'
-url:                  /slides
-baseurl:              '/slides'
+title:                jekyll-reveal
+tagline:              'write slides in markdown'
+description:          "A <a href='http://jekyllrb.com'>Jekyll</a> template for quickly writing slides in markdown. Based on <a href='https://github.com/mdo'>mdo</a>'s <a href='http://lanyon.getpoole.com/'>Lanyon</a> theme and <a href='https://github.com/hakimel'>hakimel</a>'s <a href='http://lab.hakim.se/reveal-js'>reveal.js</a> HTML presentation framework. <br><br> Made by <a href='https://github.com/ngoldman'>ngoldman</a>."
+url:                  /jekyll-reveal
+baseurl:              '/jekyll-reveal'
 paginate:             5
 
 # About/contact
@@ -25,7 +25,7 @@ author:
 version:              1.0.0
 
 github:
-  repo:               https://github.com/ngoldman/slides
+  repo:               https://github.com/ngoldman/jekyll-reveal
 
 # Extra
 safe:                 true # replicate gh-pages env
