@@ -17,6 +17,7 @@ Create a slide
 ```
 cd slides
 touch _slides/prism-bloopers.md
+$EDITOR _slides/prism-bloopers.md
 ```
 
 ```md
@@ -25,6 +26,10 @@ title: Prism Bloopers
 ---
 
 # Surveillance Lols!
+
+---
+
+![](http://cdn3.vox-cdn.com/assets/4717906/VpmftGR__2_.gif)
 
 haha we have fun here
 
