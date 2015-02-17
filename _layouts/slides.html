@@ -3,18 +3,23 @@
 
   <head>
     {% include head.html %}
-    <link rel="stylesheet" href="{{ site.baseurl }}/public/css/reveal.min.css">
+    <link rel="stylesheet" href="{{ site.baseurl }}/public/css/slides.css">
   </head>
 
   <body>
 
-    <div class="reveal"><div class="slides">
+    {% include sidebar.html %}
+
+    <div class="wrap reveal"><div class="slides">
     <section data-markdown data-separator="^\n---\n$">
         <script type="text/template">
           {{ content }}
         </script>
     </section>
     </div></div>
+
+    <label for="sidebar-checkbox" class="sidebar-toggle"></label>
+
     <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script src="{{ site.baseurl }}/public/js/md.min.js"></script>
     <script src="{{ site.baseurl }}/public/js/head.min.js"></script>

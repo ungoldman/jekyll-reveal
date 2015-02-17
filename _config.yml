@@ -12,7 +12,7 @@ relative_permalinks:  true
 title:                Slides
 tagline:              'A slide deck template'
 description:          'Slides: A slide deck template'
-url:                  /
+url:                  /slides
 baseurl:              '/slides'
 paginate:             5
 
@@ -28,6 +28,23 @@ github:
   repo:               https://github.com/ngoldman/slides
 
 # Extra
-safe:                 true #replicate gh-pages env
+safe:                 true # replicate gh-pages env
 timezone:             America/Los_Angeles
 encoding:             utf-8
+
+# fix for weird travis-ci build error
+# http://www.markcampbell.me/jekyll/heroku/2013/05/18/how-to-set-up-jekyll-on-heroku.html
+exclude:              ['vendor']
+
+collections:
+  slides:
+    permalink: /:path/
+    output: true
+
+defaults:
+  -
+    scope:
+      path: ''
+      type: 'slides'
+    values:
+      layout: 'slides'
