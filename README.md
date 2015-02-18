@@ -56,3 +56,7 @@ https://nationalsecurityagency.github.io/slides/prism-bloopers/
 ## License
 
 [MIT](LICENSE.md)
+
+## Credit
+
+Thanks to [mdo](https://github.com/mdo) & [hakimel](https://github.com/hakimel) for all of their work creating great tools for internet people.
