@@ -38,7 +38,7 @@ haha we have fun here
 ## but seriously
 ```
 
-*Important*: Edit `_config.yml` to reflect wherever you'll be pushing this to.
+**Important**: Edit [`_config.yml`](_config.yml) to reflect wherever you'll be pushing this to.
 
 Push to your new gh-pages repo
 
