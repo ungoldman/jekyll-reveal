@@ -43,6 +43,7 @@ haha we have fun here
 Push to your new gh-pages repo
 
 ```
+git commit -m 'prism bloopers'
 git add origin git@github.com:NationalSecurityAgency/slides.git
 git push origin gh-pages
 ```
